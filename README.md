@@ -5,9 +5,9 @@
 
 <!-- badges: start -->
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![R build
-status](https://github.com/poissonconsulting/mcmcderive/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/mcmcderive/actions)
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![R-CMD-check](https://github.com/poissonconsulting/mcmcderive/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/mcmcderive/actions)
 [![Codecov test
 coverage](https://codecov.io/gh/poissonconsulting/mcmcderive/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/mcmcderive?branch=master)
 [![License:
@@ -43,34 +43,6 @@ To install the latest development version from
 
 ``` r
 library(mcmcderive)
-#> Registered S3 methods overwritten by 'mcmcr':
-#>   method                    from      
-#>   as_nlist.mcmc             nlist     
-#>   as_nlist.mcmc.list        nlist     
-#>   as_nlists.mcmc            nlist     
-#>   as_term.mcmc              nlist     
-#>   collapse_chains.default   universals
-#>   collapse_chains.mcmc.list nlist     
-#>   complete_terms.mcmc       nlist     
-#>   nchains.mcmc              nlist     
-#>   nchains.mcmc.list         nlist     
-#>   niters.mcmc               nlist     
-#>   niters.mcmc.list          nlist     
-#>   npdims.mcmc.list          nlist     
-#>   nterms.mcmc               nlist     
-#>   nterms.mcmc.list          nlist     
-#>   pars.mcmc                 nlist     
-#>   pars.mcmc.list            nlist     
-#>   pdims.mcmc                nlist     
-#>   pdims.mcmc.list           nlist     
-#>   set_pars.mcmc             nlist     
-#>   set_pars.mcmc.list        nlist     
-#>   sort.mcmc                 nlist     
-#>   sort.mcmc.list            nlist     
-#>   subset.mcmc               nlist     
-#>   subset.mcmc.list          nlist     
-#>   tidy.mcmc                 nlist     
-#>   tidy.mcmc.list            nlist
 
 mcmcr::mcmcr_example
 #> $alpha
