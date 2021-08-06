@@ -1,6 +1,8 @@
-# mcmcderive 0.1.1
+<!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
-- Internal changes only.
+# mcmcderive 0.1.2
+
+- Removed constraint that derived parameters do not have any missing values.
 
 # mcmcderive 0.1.0
 

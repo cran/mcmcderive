@@ -24,18 +24,6 @@ add_new_variables <- function(values, object, expr, silent) {
   values
 }
 
-check_no_missing_values <- function(object) {
-  missing <- vapply(object, anyNA, TRUE)
-
-  if (any(missing)) {
-    err(
-      "the following derived parameters include missing values: ",
-      cc(names(missing[missing]), " and ")
-    )
-  }
-  TRUE
-}
-
 drop_overridden_parameters <- function(object, values, silent) {
   parameters <- pars(object)
   drop <- parameters[parameters %in% names(values)]
@@ -182,8 +170,5 @@ split_apply_combine <- function(object, expr, values, monitor, parallel) {
     )
   }
 
-  object <- Reduce(bind_chains, object)
-
-  check_no_missing_values(object)
-  object
+  Reduce(bind_chains, object)
 }
